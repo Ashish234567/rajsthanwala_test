@@ -11114,3 +11114,104 @@ section.py-5.bg-light {
   }
 }
 
+
+
+
+/* Base layout for desktop */
+.consul-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.consul-content {
+  flex: 1;
+}
+
+.consul-content h2 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.consul-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.ho-con-cont {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ho-con-cont a {
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background: #d9534f;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.consul-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.consul-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* -------- MOBILE VIEW FIX -------- */
+@media (max-width: 768px) {
+  .consul-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .consul-content {
+    width: 100%;
+  }
+
+  .consul-content h2 {
+    font-size: 22px;
+  }
+
+  .consul-content p {
+    font-size: 14px;
+  }
+
+  /* Fix button alignment */
+  .ho-con-cont {
+    display: block;
+    text-align: center;
+  }
+
+  .ho-con-cont a {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 8px auto;
+  }
+
+  .consul-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .consul-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
